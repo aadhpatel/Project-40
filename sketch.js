@@ -31,6 +31,7 @@ function setup() {
   game = new Game();
   game.getState();
   game.start();
+  database.update();
   
 }
 
@@ -51,6 +52,10 @@ function draw() {
 
 database.update();
 
+
+if(fruits.collide(player1, player2)) {
+  
+}
    player1.score();
    player2.score();
 
